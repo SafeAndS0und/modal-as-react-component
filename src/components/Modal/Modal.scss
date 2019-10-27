@@ -1,0 +1,164 @@
+.modal {
+  position: relative;
+  min-width: 730px;
+  max-width: 980px;
+  width: 90%;
+  transition: .7s;
+
+  header {
+    position: absolute;
+    left: 50%;
+    top: -8%;
+    transform: translateX(-50%);
+    width: 42%;
+
+    h2 {
+      position: absolute;
+      top: 33%;
+      width: 100%;
+      margin: 0;
+      text-align: center;
+      font-size: 2.25em;
+      text-shadow: 3px 3px #a4a3a1;
+    }
+  }
+
+  &-content {
+    position: absolute;
+    left: 50%;
+    top: 6%;
+    transform: translateX(-50%); // centering
+    min-width: 50%;
+    opacity: 1;
+    display: grid;
+    justify-items: center;
+
+    &__price {
+      display: grid;
+      grid-template-columns: auto max-content auto;
+      align-items: center;
+
+      h1 {
+        font-size: 6em;
+        color: white;
+        text-align: center;
+        padding: 0 20px;
+        margin-bottom: 50px;
+      }
+
+      svg {
+        transform: translateY(25px);
+      }
+
+    }
+
+    &__payment {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 40px;
+      text-align: center;
+
+      .modal-content__btn {
+        padding: 5px 10px;
+        border: solid 4px black;
+        background-color: white;
+        cursor: pointer;
+
+        @media (max-width: 1000px) {
+          max-height: 80px;
+        }
+
+        &--paypal, &--credit-card {
+          position: relative;
+          transition: .3s;
+
+          .gwiazdka {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 145px;
+            height: 145px;
+            z-index: -1;
+            animation: spin 20s infinite linear alternate;
+          }
+
+          @keyframes spin {
+            from {
+              transform: translateX(-50%) translateY(-50%) rotate(0);
+            }
+            to {
+              transform: translateX(-50%) translateY(-50%) rotate(180deg);
+            }
+          }
+
+          img, h3 {
+            position: relative;
+          }
+        }
+
+        &--paypal {
+
+          img {
+            width: 60%;
+          }
+        }
+
+        &--credit-card {
+          position: relative;
+          display: grid;
+          grid-template-columns: minmax(40px, 80px) auto;
+          grid-gap: 10px;
+          align-items: center;
+
+          img {
+            width: 100%;
+          }
+
+          h3 {
+            font-size: 1.5em;
+            margin: 0;
+            text-align: left;
+
+            &::after {
+              content: '';
+              position: absolute;
+              top: .55em;
+              right: 11%;
+              width: 40%;
+              height: 6px;
+              border-radius: 10px;
+              background-color: #ff5f64;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__pay-button {
+    position: absolute;
+    left: 50%;
+    bottom: -3%;
+    transform: translateX(-50%);
+    width: 30%;
+    text-align: center;
+    background-color: #FCB639;
+    border: 8px solid #c69422;
+    cursor: pointer;
+    transition: .2s;
+    transform-origin: center;
+
+    &:hover {
+      width: 32%;
+    }
+
+    h3 {
+      font-size: 1.9em;
+      margin: 5px 0;
+      letter-spacing: 2px;
+    }
+
+  }
+
+}

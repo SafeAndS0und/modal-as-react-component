@@ -1,26 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from 'react'
+import './App.scss'
+import Modal from './components/Modal/Modal.js'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () =>{
+   const [showModal, toggleShowModal] = useState(false)
+
+   const onExit = () =>{
+      toggleShowModal(false)
+   }
+
+   return (
+      <div className="App">
+
+         <Modal onExit={onExit} showModal={showModal}/>
+
+         <button className="show-modal"
+                 style={{transform: `translateX(${!showModal ? 0 : -12}em)`}}
+                 onClick={() => toggleShowModal(true)}>Zamawiam
+         </button>
+
+      </div>
+   )
 }
 
-export default App;
+export default App
