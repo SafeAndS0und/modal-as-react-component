@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.baf915ec.chunk.css",
-    "main.js": "/static/js/main.e1b70870.chunk.js",
-    "main.js.map": "/static/js/main.e1b70870.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.e9532d40.js",
-    "runtime-main.js.map": "/static/js/runtime-main.e9532d40.js.map",
-    "static/js/2.a4ce7db5.chunk.js": "/static/js/2.a4ce7db5.chunk.js",
-    "static/js/2.a4ce7db5.chunk.js.map": "/static/js/2.a4ce7db5.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.ba8ae45a5afed505d963971476e57fd1.js": "/precache-manifest.ba8ae45a5afed505d963971476e57fd1.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.baf915ec.chunk.css.map": "/static/css/main.baf915ec.chunk.css.map"
+    "main.css": "//safeands0und.github.io/modal-as-react-component/static/css/main.baf915ec.chunk.css",
+    "main.js": "//safeands0und.github.io/modal-as-react-component/static/js/main.e1b70870.chunk.js",
+    "main.js.map": "//safeands0und.github.io/modal-as-react-component/static/js/main.e1b70870.chunk.js.map",
+    "runtime-main.js": "//safeands0und.github.io/modal-as-react-component/static/js/runtime-main.b0dc0eba.js",
+    "runtime-main.js.map": "//safeands0und.github.io/modal-as-react-component/static/js/runtime-main.b0dc0eba.js.map",
+    "static/js/2.a4ce7db5.chunk.js": "//safeands0und.github.io/modal-as-react-component/static/js/2.a4ce7db5.chunk.js",
+    "static/js/2.a4ce7db5.chunk.js.map": "//safeands0und.github.io/modal-as-react-component/static/js/2.a4ce7db5.chunk.js.map",
+    "index.html": "//safeands0und.github.io/modal-as-react-component/index.html",
+    "precache-manifest.87a8128c03afa7f1c3775414e217a72d.js": "//safeands0und.github.io/modal-as-react-component/precache-manifest.87a8128c03afa7f1c3775414e217a72d.js",
+    "service-worker.js": "//safeands0und.github.io/modal-as-react-component/service-worker.js",
+    "static/css/main.baf915ec.chunk.css.map": "//safeands0und.github.io/modal-as-react-component/static/css/main.baf915ec.chunk.css.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.e9532d40.js",
+    "static/js/runtime-main.b0dc0eba.js",
     "static/js/2.a4ce7db5.chunk.js",
     "static/css/main.baf915ec.chunk.css",
     "static/js/main.e1b70870.chunk.js"
