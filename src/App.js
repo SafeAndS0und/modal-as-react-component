@@ -5,14 +5,11 @@ import Modal from './components/Modal/Modal.js'
 const App = () =>{
    const [showModal, toggleShowModal] = useState(false)
 
-   const onExit = () =>{
-      toggleShowModal(false)
-   }
-
    return (
       <div className="App">
 
-         <Modal onExit={onExit} showModal={showModal}/>
+         <Modal onExit={() => toggleShowModal(false)}
+                showModal={showModal}/>
 
          <button className="show-modal"
                  style={{transform: `translateX(${!showModal ? 0 : -12}em)`}}
